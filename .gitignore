@@ -1,0 +1,48 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+
+# Parent Theme
+wp-content/themes/*
+!wp-content/themes/blocksy-child/
+!wp-content/themes/blocksy-child/**
+
+# Third-party Plugins
+wp-content/plugins/*
+!wp-content/plugins/candy-nail-core/
+!wp-content/plugins/candy-nail-core/**
+
+# Uploads
+wp-content/uploads/
+
+# Cache
+wp-content/cache/
+wp-content/upgrade/
+
+# Backup Plugins
+wp-content/ai1wm-backups/
+wp-content/updraft/
+
+# Database
+*.sql
+
+# Environment
+wp-config.php
+
+# Local WP
+local-xdebuginfo.php
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WordPress documentation
+license.txt
+readme.html
