@@ -1,0 +1,69 @@
+/* ========================================
+   WooCommerce Sale Price
+   ======================================== */
+
+.woocommerce ul.products li.product .price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 6px;
+    row-gap: 2px;
+}
+
+/* Let the sale price contents participate
+   directly in the flex layout */
+.woocommerce ul.products li.product .price .sale-price {
+    display: contents;
+}
+
+/* Sale price
+   Example: Rp312.000 */
+.woocommerce ul.products li.product .price ins {
+    order: 1;
+    width: 100%;
+}
+
+/* Discount
+   Example: -22% */
+.woocommerce ul.products li.product .price .cn-discount {
+    order: 3;
+    padding: 2px 3px;
+    background-color: #F8E8EA;
+    border-radius: 4px;
+    font-size: 80%;
+}
+
+/* ========================================
+   PRODUCT PAGE PRICE
+   ======================================== */
+
+.woocommerce div.product .summary > .price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 4px;
+}
+
+/* Allow sale price contents to participate
+   in the flex layout */
+.woocommerce div.product .summary > .price .sale-price {
+    display: contents;
+}
+
+/* Sale price
+   Example: Rp312.000 */
+.woocommerce div.product .summary > .price ins {
+    order: 1;
+    width: 100%;
+}
+
+/* Discount badge
+   Example: -22% */
+.woocommerce div.product .summary > .price .cn-discount {
+    order: 3;
+    padding: 2px 3px;
+    background-color: #F8E8EA;
+    border-radius: 4px;
+    font-size: 80%;
+}
